@@ -2,6 +2,16 @@
     width: 100px;;
 }
 
+.navegador{
+    background-image: url("../images/Confetti.jpg");
+    background-size: cover;
+    max-width: none;
+}
+
+.flecha-link{
+    background-color:  rgb(237, 100, 203);
+}
+
 h1{
     text-align: center;
 
@@ -62,7 +72,7 @@ footer i{
 
 table{
     border: 1px solid black;
-    margin-bottom: 7.7%;
+    margin-bottom: 14%;
   }
 
  table tr{
@@ -76,5 +86,5 @@ table{
   }
 
    .cabecera{
-    background-color: gray;
+    background-color: rgb(223, 86, 193);
    }
