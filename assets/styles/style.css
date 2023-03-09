@@ -61,13 +61,8 @@ footer i{
 }
 
 
-.details .card{
-    width: 350%; 
-}
-
-.details .textoCard{
-    margin-top: 5%;
-    margin-left: 58%;
+#detailCard> img{
+    width: 60%; 
 }
 
 table{

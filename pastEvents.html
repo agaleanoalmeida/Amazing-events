@@ -59,40 +59,16 @@
 
     <main>
 
-        <div class="container">
-            <div class="row">
-                <div class="col-6 formulario">
-                    <form action="POST">
-                        <label>
-                            <input type="checkbox" value="Category1"> Category
-                        </label>
-                        <label>
-                            <input type="checkbox" value="Category2"> Category
-                        </label>
-                        <label>
-                            <input type="checkbox" value="Category3"> Category
-                        </label>
-                        <label>
-                            <input type="checkbox" value="Category4"> Category
-                        </label>
-                        <label>
-                            <input type="checkbox" value="Category5"> Category
-                        </label>
-                    </form>
-                </div>
-
-                <div class="col-6 search d-flex justify-content-end">
-                    <nav class="navbar bg-body-tertiary">
-                        <div class="container-fluid">
-                            <form class="d-flex" role="search">
-                                <input class="form-control me-2" type="search" aria-label="Search">
-                                <button class="btn btn-outline-success" type="submit"><i
-                                        class="bi bi-search"></i></button>
-                            </form>
-                        </div>
-                    </nav>
-                </div>
+        <div class="py-3 pb-3 border-bottom border-danger-subtle container d-flex justify-content-around align-items-center flex-wrap">
+            <div class="d-flex flex-wrap justify-content-between contCheck">
+                <!-- dynamicContent -->
             </div>
+            <form class="searchForm">
+                <div class="d-flex">
+                    <input type="text" name="search" class="searchInput rounded-start-pill shadow-none rounded-0 form-control border border-dark-subtle" placeholder="Search">
+                    <button type="submit" class="searchSubmit rounded-0 rounded-end-circle btn btn-info"><i class="bi bi-search text-white"></i></button>
+                </div>
+            </form>
         </div>
 
         <div class="container ">

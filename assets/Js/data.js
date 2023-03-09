@@ -172,6 +172,10 @@ let data = {
     ]
   };
 
+
+  //****FUNCIONES******
+
+  //Creación de tarjetas dinámicas
   function createCard(event){
     let card =  
     `<div class="card" style="width: 18rem;">
@@ -182,9 +186,39 @@ let data = {
     </div>
     <div class="card-body">
         <p class="card-text">Price: $ ${event.price}</p>
-        <a href="./details.html" class="btn btn-primary">Ver más</a>
+        <a href="./details.html?id=${event._id}" class="btn btn-primary">Ver más</a>
     </div>
 </div>`
 
 return card;
   }
+
+// Crear e insertar checkbox de categorias
+function insertCheckbox() {
+  let listCategories = "";
+  const checkContainer = document.querySelector(".contCheck");
+  let categories = [];
+
+  data.events.forEach(evento => {
+    if (!categories.includes(evento.category)) {
+      categories.push(evento.category);
+      listCategories += `<div class="form-check form-check-inline">
+      <input class="form-check-input checkbox-info shadow-none border border-dark-subtle" type="checkbox" name="Category" value="${evento.category}" id="${evento.category}">
+      <label class="form-check-label" for="${evento.category}">${evento.category}</label>
+      </div>`;
+    }
+checkContainer.innerHTML = listCategories;
+});
+};
+
+
+// Crear mensaje de error de búsqueda
+function nothingFound(word) {
+  document.getElementById('card-container').innerHTML = `
+  <div class="text-center">
+  <p class="pb-3"><i class="bi bi-search fs-1"></i></p>
+  <h3>We couldn't find anything for '${word}'</h3>
+  <p>You may want to try using different keywords, deselecting filters, or checking for spelling mistakes.</p>
+  </div>
+  `
+};
