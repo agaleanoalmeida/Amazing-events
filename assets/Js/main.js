@@ -6,7 +6,7 @@
 // }
 
 // cardContainer.innerHTML = htmlEvents;
-//Corrijo código y pongo dentro de función para mejor orden.
+//***Corrijo código y pongo dentro de función para mejor orden.****
 
 
 const cardContainer = document.getElementById("card-container");
